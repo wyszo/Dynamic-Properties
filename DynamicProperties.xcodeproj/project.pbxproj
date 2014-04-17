@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3112361B18FFF28500020E6F /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361A18FFF28500020E6F /* RootClass.m */; };
+		3112361E1900998C00020E6F /* NSObject+DynamicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */; };
+		3112361F190099ED00020E6F /* NSObject+DynamicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */; };
 		318EE54718FFE708007F24D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54618FFE708007F24D7 /* Foundation.framework */; };
 		318EE54918FFE708007F24D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54818FFE708007F24D7 /* CoreGraphics.framework */; };
 		318EE54B18FFE708007F24D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54A18FFE708007F24D7 /* UIKit.framework */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		3112361918FFF28500020E6F /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
 		3112361A18FFF28500020E6F /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
+		3112361C1900998C00020E6F /* NSObject+DynamicProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DynamicProperties.h"; sourceTree = "<group>"; };
+		3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DynamicProperties.m"; sourceTree = "<group>"; };
 		318EE54318FFE708007F24D7 /* DynamicProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EE54618FFE708007F24D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		318EE54818FFE708007F24D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +126,8 @@
 				318EE54D18FFE708007F24D7 /* Supporting Files */,
 				3112361918FFF28500020E6F /* RootClass.h */,
 				3112361A18FFF28500020E6F /* RootClass.m */,
+				3112361C1900998C00020E6F /* NSObject+DynamicProperties.h */,
+				3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */,
 			);
 			path = DynamicProperties;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3112361E1900998C00020E6F /* NSObject+DynamicProperties.m in Sources */,
 				318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */,
 				318EE55318FFE708007F24D7 /* main.m in Sources */,
 				3112361B18FFF28500020E6F /* RootClass.m in Sources */,
@@ -296,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3112361F190099ED00020E6F /* NSObject+DynamicProperties.m in Sources */,
 				318EE57218FFE709007F24D7 /* DynamicPropertiesTestsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
