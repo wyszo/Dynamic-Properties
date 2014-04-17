@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3112361B18FFF28500020E6F /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361A18FFF28500020E6F /* RootClass.m */; };
 		318EE54718FFE708007F24D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54618FFE708007F24D7 /* Foundation.framework */; };
 		318EE54918FFE708007F24D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54818FFE708007F24D7 /* CoreGraphics.framework */; };
 		318EE54B18FFE708007F24D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54A18FFE708007F24D7 /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3112361918FFF28500020E6F /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
+		3112361A18FFF28500020E6F /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
 		318EE54318FFE708007F24D7 /* DynamicProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EE54618FFE708007F24D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		318EE54818FFE708007F24D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				318EE55618FFE708007F24D7 /* AppDelegate.m */,
 				318EE55E18FFE709007F24D7 /* Images.xcassets */,
 				318EE54D18FFE708007F24D7 /* Supporting Files */,
+				3112361918FFF28500020E6F /* RootClass.h */,
+				3112361A18FFF28500020E6F /* RootClass.m */,
 			);
 			path = DynamicProperties;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			files = (
 				318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */,
 				318EE55318FFE708007F24D7 /* main.m in Sources */,
+				3112361B18FFF28500020E6F /* RootClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
