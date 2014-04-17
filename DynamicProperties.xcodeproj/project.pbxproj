@@ -13,8 +13,6 @@
 		318EE55118FFE708007F24D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 318EE54F18FFE708007F24D7 /* InfoPlist.strings */; };
 		318EE55318FFE708007F24D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EE55218FFE708007F24D7 /* main.m */; };
 		318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EE55618FFE708007F24D7 /* AppDelegate.m */; };
-		318EE55A18FFE708007F24D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318EE55818FFE708007F24D7 /* Main.storyboard */; };
-		318EE55D18FFE708007F24D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EE55C18FFE708007F24D7 /* ViewController.m */; };
 		318EE55F18FFE709007F24D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318EE55E18FFE709007F24D7 /* Images.xcassets */; };
 		318EE56618FFE709007F24D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE56518FFE709007F24D7 /* XCTest.framework */; };
 		318EE56718FFE709007F24D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54618FFE708007F24D7 /* Foundation.framework */; };
@@ -45,9 +43,6 @@
 		318EE55418FFE708007F24D7 /* DynamicProperties-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicProperties-Prefix.pch"; sourceTree = "<group>"; };
 		318EE55518FFE708007F24D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		318EE55618FFE708007F24D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		318EE55918FFE708007F24D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		318EE55B18FFE708007F24D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		318EE55C18FFE708007F24D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		318EE55E18FFE709007F24D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		318EE56418FFE709007F24D7 /* DynamicPropertiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicPropertiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EE56518FFE709007F24D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -120,9 +115,6 @@
 			children = (
 				318EE55518FFE708007F24D7 /* AppDelegate.h */,
 				318EE55618FFE708007F24D7 /* AppDelegate.m */,
-				318EE55818FFE708007F24D7 /* Main.storyboard */,
-				318EE55B18FFE708007F24D7 /* ViewController.h */,
-				318EE55C18FFE708007F24D7 /* ViewController.m */,
 				318EE55E18FFE709007F24D7 /* Images.xcassets */,
 				318EE54D18FFE708007F24D7 /* Supporting Files */,
 			);
@@ -238,7 +230,6 @@
 			files = (
 				318EE55F18FFE709007F24D7 /* Images.xcassets in Resources */,
 				318EE55118FFE708007F24D7 /* InfoPlist.strings in Resources */,
-				318EE55A18FFE708007F24D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318EE55D18FFE708007F24D7 /* ViewController.m in Sources */,
 				318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */,
 				318EE55318FFE708007F24D7 /* main.m in Sources */,
 			);
@@ -321,14 +311,6 @@
 				318EE55018FFE708007F24D7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		318EE55818FFE708007F24D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				318EE55918FFE708007F24D7 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		318EE56E18FFE709007F24D7 /* InfoPlist.strings */ = {
