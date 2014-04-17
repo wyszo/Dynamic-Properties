@@ -8,6 +8,17 @@
 @end
 
 @implementation SimpleClass
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _firstString = @"first one!";
+        _secondString = @"second one!";
+    }
+    return self;
+}
+
 @end
 
 
@@ -22,17 +33,16 @@ describe(@"SimpleClass", ^{
     });
     
     context(@"when asked for all NSString properties", ^{
-        
         __block NSArray *allNSStringProperties;
         
         beforeAll(^{
-            allNSStringProperties = [simpleObject allPropertiesOfClass:[NSString class]];
+            allNSStringProperties = [simpleObject allNonemptyPropertiesOfClass:[NSString class]];
         });
         
         it(@"should return [firstString, secondString]", ^{
             [[allNSStringProperties shouldNot] beNil];
             [[theValue(allNSStringProperties.count) should] equal:theValue(2)];
-            [[allNSStringProperties[0] should] equal:simpleObject.firstString]; // are the properties guaranteed to be returned in the same order?
+            [[allNSStringProperties[0] should] equal:simpleObject.firstString];
             [[allNSStringProperties[1] should] equal:simpleObject.secondString];
         });
     });

@@ -29,7 +29,7 @@
 
 - (NSArray *)allSmallObjects
 {
-	return [self allPropertiesOfClass:[SmallObject class]];
+	return [self allNonemptyPropertiesOfClass:[SmallObject class]];
 }
 
 - (void) printSmallObjectProperties

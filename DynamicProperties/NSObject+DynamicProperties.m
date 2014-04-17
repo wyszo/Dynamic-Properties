@@ -5,37 +5,28 @@
 
 @implementation NSObject (DynamicProperties)
 
-- (NSArray *)allPropertiesOfClass:(Class)aClass
+- (NSArray *)allNonemptyPropertiesOfClass:(Class)aClass
 {
-	NSLog(@"inside method: %@", NSStringFromSelector(_cmd));
-	NSMutableArray *smallObjects = [NSMutableArray new];
+	NSMutableArray *matchingProperties = [NSMutableArray new];
 	
-	// 1. copy property list
+	// copy property list
 	unsigned int numberOfProperties;
 	objc_property_t *properties = class_copyPropertyList([self class], &numberOfProperties);
 	
-	NSLog(@"class has %d properties", numberOfProperties);
-	
-	// 2. traverse the list and print property names and types
+	// traverse the list and print property names and types
 	for (int i=0; i<numberOfProperties; i++) {
 		objc_property_t property = properties[i];
+        
 		NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
-		NSLog(@"property name: %@", propertyName);
-		
 		id propertyInstance = [self valueForKey:propertyName];
 		
-		NSLog(@"instance: %@", propertyInstance);
-		NSLog(@"property class: %@", NSStringFromClass([propertyInstance class]));
-		
-		// 3. if class == SmallObject, add to smallObjects array
+        // if class matches, add to results array
 		if ([propertyInstance isKindOfClass:aClass]) {
-			NSLog(@"added %@ to allSmartObjects array", propertyInstance);
-			[smallObjects addObject:propertyInstance];
+			[matchingProperties addObject:propertyInstance];
 		}
 	}
 	free(properties);
-	
-	return [smallObjects copy];
+	return [matchingProperties copy];
 }
 
 @end
