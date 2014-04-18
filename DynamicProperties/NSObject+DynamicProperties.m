@@ -6,7 +6,7 @@
 @implementation NSObject (DynamicProperties)
 
 - (NSArray *)allNonemptyPropertiesOfClass:(Class)aClass
-{
+{   
 	NSMutableArray *matchingProperties = [NSMutableArray new];
 	
 	// copy property list
@@ -26,7 +26,11 @@
 		}
 	}
 	free(properties);
-	return [matchingProperties copy];
+	
+    if (matchingProperties.count == 0) {
+        matchingProperties = nil;
+    }
+    return [matchingProperties copy];
 }
 
 @end
