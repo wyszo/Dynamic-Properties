@@ -1,6 +1,6 @@
 
 #import "NSObject+DynamicProperties.h"
-#import <objc/message.h>
+#import <objc/runtime.h>
 
 
 @implementation NSObject (DynamicProperties)
