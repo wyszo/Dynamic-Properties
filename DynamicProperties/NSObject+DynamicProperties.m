@@ -24,15 +24,19 @@
     
 	for (int i=0; i < allPropertiesCount; i++) {
 		objc_property_t property = allProperties[i];
-        
-		NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
-		id propertyInstance = [self valueForKey:propertyName];
-		
-		if ([propertyInstance isKindOfClass:aClass]) {
-			[matchingProperties addObject:propertyInstance];
-		}
+ 
+        id propertyInstance = [self instanceOfProperty:property];
+        if ([propertyInstance isKindOfClass:aClass]) {
+            [matchingProperties addObject:propertyInstance];
+        }
 	}
     return [matchingProperties copy];
+}
+
+- (id)instanceOfProperty:(objc_property_t)property
+{
+    NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
+    return [self valueForKey:propertyName];
 }
 
 @end
