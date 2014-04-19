@@ -6,4 +6,4 @@ The code shows how to list all nonempty properties of a given type (class) on an
 - (NSArray *)allNonemptyPropertiesOfClass:(Class)aClass;
 on any object to get a list of properties that are not nil. 
 
-See AppDelegate.m and SampleClass.m implementation for usage examples. Also check DynamicPropertiesTestsSpec.m file for kiwi unit tests. 
+See main.m and SampleClass.m implementation for usage examples. Also check DynamicPropertiesTestsSpec.m file for kiwi unit tests. 

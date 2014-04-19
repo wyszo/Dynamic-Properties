@@ -1,10 +1,11 @@
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "SampleClass.h"
 
 int main(int argc, char * argv[])
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+    /**
+     * See DynamicPropertiesTestsSpec.m file for more usage examples!
+     */
+    SampleClass *sample = [SampleClass new];
+    [sample printAllFooProperties];
 }

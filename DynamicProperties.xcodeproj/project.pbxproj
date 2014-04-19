@@ -11,16 +11,12 @@
 		3112361E1900998C00020E6F /* NSObject+DynamicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */; };
 		3112361F190099ED00020E6F /* NSObject+DynamicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */; };
 		318EE54718FFE708007F24D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54618FFE708007F24D7 /* Foundation.framework */; };
-		318EE54918FFE708007F24D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54818FFE708007F24D7 /* CoreGraphics.framework */; };
 		318EE54B18FFE708007F24D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54A18FFE708007F24D7 /* UIKit.framework */; };
-		318EE55118FFE708007F24D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 318EE54F18FFE708007F24D7 /* InfoPlist.strings */; };
 		318EE55318FFE708007F24D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EE55218FFE708007F24D7 /* main.m */; };
-		318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EE55618FFE708007F24D7 /* AppDelegate.m */; };
 		318EE55F18FFE709007F24D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318EE55E18FFE709007F24D7 /* Images.xcassets */; };
 		318EE56618FFE709007F24D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE56518FFE709007F24D7 /* XCTest.framework */; };
 		318EE56718FFE709007F24D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54618FFE708007F24D7 /* Foundation.framework */; };
 		318EE56818FFE709007F24D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54A18FFE708007F24D7 /* UIKit.framework */; };
-		318EE57018FFE709007F24D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 318EE56E18FFE709007F24D7 /* InfoPlist.strings */; };
 		318EE57218FFE709007F24D7 /* DynamicPropertiesTestsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EE57118FFE709007F24D7 /* DynamicPropertiesTestsSpec.m */; };
 		6CD8FE319BF24F098BE8EC47 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B31B04E0AD483580AE5460 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -42,19 +38,14 @@
 		3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DynamicProperties.m"; sourceTree = "<group>"; };
 		318EE54318FFE708007F24D7 /* DynamicProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EE54618FFE708007F24D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		318EE54818FFE708007F24D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		318EE54A18FFE708007F24D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		318EE54E18FFE708007F24D7 /* DynamicProperties-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicProperties-Info.plist"; sourceTree = "<group>"; };
-		318EE55018FFE708007F24D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		318EE55218FFE708007F24D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		318EE55418FFE708007F24D7 /* DynamicProperties-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicProperties-Prefix.pch"; sourceTree = "<group>"; };
-		318EE55518FFE708007F24D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		318EE55618FFE708007F24D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		318EE55E18FFE709007F24D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		318EE56418FFE709007F24D7 /* DynamicPropertiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicPropertiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EE56518FFE709007F24D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		318EE56D18FFE709007F24D7 /* DynamicPropertiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicPropertiesTests-Info.plist"; sourceTree = "<group>"; };
-		318EE56F18FFE709007F24D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		318EE57118FFE709007F24D7 /* DynamicPropertiesTestsSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicPropertiesTestsSpec.m; sourceTree = "<group>"; };
 		87AE1574EA5C4418AD2ACF5E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C5B31B04E0AD483580AE5460 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318EE54918FFE708007F24D7 /* CoreGraphics.framework in Frameworks */,
 				318EE54B18FFE708007F24D7 /* UIKit.framework in Frameworks */,
 				318EE54718FFE708007F24D7 /* Foundation.framework in Frameworks */,
 				6CD8FE319BF24F098BE8EC47 /* libPods.a in Frameworks */,
@@ -109,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				318EE54618FFE708007F24D7 /* Foundation.framework */,
-				318EE54818FFE708007F24D7 /* CoreGraphics.framework */,
 				318EE54A18FFE708007F24D7 /* UIKit.framework */,
 				318EE56518FFE709007F24D7 /* XCTest.framework */,
 				C5B31B04E0AD483580AE5460 /* libPods.a */,
@@ -120,13 +109,11 @@
 		318EE54C18FFE708007F24D7 /* DynamicProperties */ = {
 			isa = PBXGroup;
 			children = (
-				318EE55518FFE708007F24D7 /* AppDelegate.h */,
-				318EE55618FFE708007F24D7 /* AppDelegate.m */,
+				318EE55218FFE708007F24D7 /* main.m */,
 				3112361918FFF28500020E6F /* SampleClass.h */,
 				3112361A18FFF28500020E6F /* SampleClass.m */,
 				3112361C1900998C00020E6F /* NSObject+DynamicProperties.h */,
 				3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */,
-				318EE55E18FFE709007F24D7 /* Images.xcassets */,
 				318EE54D18FFE708007F24D7 /* Supporting Files */,
 			);
 			path = DynamicProperties;
@@ -136,8 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				318EE54E18FFE708007F24D7 /* DynamicProperties-Info.plist */,
-				318EE54F18FFE708007F24D7 /* InfoPlist.strings */,
-				318EE55218FFE708007F24D7 /* main.m */,
+				318EE55E18FFE709007F24D7 /* Images.xcassets */,
 				318EE55418FFE708007F24D7 /* DynamicProperties-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -156,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				318EE56D18FFE709007F24D7 /* DynamicPropertiesTests-Info.plist */,
-				318EE56E18FFE709007F24D7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -240,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				318EE55F18FFE709007F24D7 /* Images.xcassets in Resources */,
-				318EE55118FFE708007F24D7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318EE57018FFE709007F24D7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3112361E1900998C00020E6F /* NSObject+DynamicProperties.m in Sources */,
-				318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */,
 				318EE55318FFE708007F24D7 /* main.m in Sources */,
 				3112361B18FFF28500020E6F /* SampleClass.m in Sources */,
 			);
@@ -317,25 +299,6 @@
 			targetProxy = 318EE56918FFE709007F24D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		318EE54F18FFE708007F24D7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				318EE55018FFE708007F24D7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		318EE56E18FFE709007F24D7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				318EE56F18FFE709007F24D7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		318EE57318FFE709007F24D7 /* Debug */ = {

@@ -2,7 +2,6 @@
 #import "SampleClass.h"
 #import "NSObject+DynamicProperties.h"
 
-
 @implementation Foo
 @end
 
