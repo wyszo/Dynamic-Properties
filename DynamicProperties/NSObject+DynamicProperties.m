@@ -7,29 +7,31 @@
 
 - (NSArray *)allNonemptyPropertiesOfClass:(Class)aClass
 {
-	NSMutableArray *matchingProperties = [NSMutableArray new];
-	
-	// copy property list
-	unsigned int numberOfProperties;
-	objc_property_t *properties = class_copyPropertyList([self class], &numberOfProperties);
-	
-	// traverse the list and print property names and types
-	for (int i=0; i<numberOfProperties; i++) {
-		objc_property_t property = properties[i];
-        
-		NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
-		id propertyInstance = [self valueForKey:propertyName];
-		
-        // if class matches, add to results array
-		if ([propertyInstance isKindOfClass:aClass]) {
-			[matchingProperties addObject:propertyInstance];
-		}
-	}
-	free(properties);
+	unsigned int count;
+	objc_property_t *allProperties = class_copyPropertyList([self class], &count);
+    NSArray *matchingProperties = [self allPropertiesOfType:aClass fromPropertyList:allProperties withPropertyListCount:count];
+	free(allProperties);
 	
     if (matchingProperties.count == 0) {
         matchingProperties = nil;
     }
+    return matchingProperties;
+}
+
+- (NSArray *)allPropertiesOfType:(Class)aClass fromPropertyList:(objc_property_t *)allProperties withPropertyListCount:(unsigned int)allPropertiesCount
+{
+    NSMutableArray *matchingProperties = [NSMutableArray new];
+    
+	for (int i=0; i < allPropertiesCount; i++) {
+		objc_property_t property = allProperties[i];
+        
+		NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
+		id propertyInstance = [self valueForKey:propertyName];
+		
+		if ([propertyInstance isKindOfClass:aClass]) {
+			[matchingProperties addObject:propertyInstance];
+		}
+	}
     return [matchingProperties copy];
 }
 
