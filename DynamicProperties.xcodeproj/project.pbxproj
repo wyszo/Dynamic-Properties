@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3112361B18FFF28500020E6F /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361A18FFF28500020E6F /* RootClass.m */; };
+		3112361B18FFF28500020E6F /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361A18FFF28500020E6F /* SampleClass.m */; };
 		3112361E1900998C00020E6F /* NSObject+DynamicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */; };
 		3112361F190099ED00020E6F /* NSObject+DynamicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */; };
 		318EE54718FFE708007F24D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318EE54618FFE708007F24D7 /* Foundation.framework */; };
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3112361918FFF28500020E6F /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
-		3112361A18FFF28500020E6F /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
+		3112361918FFF28500020E6F /* SampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClass.h; sourceTree = "<group>"; };
+		3112361A18FFF28500020E6F /* SampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
 		3112361C1900998C00020E6F /* NSObject+DynamicProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DynamicProperties.h"; sourceTree = "<group>"; };
 		3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DynamicProperties.m"; sourceTree = "<group>"; };
 		318EE54318FFE708007F24D7 /* DynamicProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +124,8 @@
 				318EE55618FFE708007F24D7 /* AppDelegate.m */,
 				318EE55E18FFE709007F24D7 /* Images.xcassets */,
 				318EE54D18FFE708007F24D7 /* Supporting Files */,
-				3112361918FFF28500020E6F /* RootClass.h */,
-				3112361A18FFF28500020E6F /* RootClass.m */,
+				3112361918FFF28500020E6F /* SampleClass.h */,
+				3112361A18FFF28500020E6F /* SampleClass.m */,
 				3112361C1900998C00020E6F /* NSObject+DynamicProperties.h */,
 				3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */,
 			);
@@ -295,7 +295,7 @@
 				3112361E1900998C00020E6F /* NSObject+DynamicProperties.m in Sources */,
 				318EE55718FFE708007F24D7 /* AppDelegate.m in Sources */,
 				318EE55318FFE708007F24D7 /* main.m in Sources */,
-				3112361B18FFF28500020E6F /* RootClass.m in Sources */,
+				3112361B18FFF28500020E6F /* SampleClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
