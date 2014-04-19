@@ -122,12 +122,12 @@
 			children = (
 				318EE55518FFE708007F24D7 /* AppDelegate.h */,
 				318EE55618FFE708007F24D7 /* AppDelegate.m */,
-				318EE55E18FFE709007F24D7 /* Images.xcassets */,
-				318EE54D18FFE708007F24D7 /* Supporting Files */,
 				3112361918FFF28500020E6F /* SampleClass.h */,
 				3112361A18FFF28500020E6F /* SampleClass.m */,
 				3112361C1900998C00020E6F /* NSObject+DynamicProperties.h */,
 				3112361D1900998C00020E6F /* NSObject+DynamicProperties.m */,
+				318EE55E18FFE709007F24D7 /* Images.xcassets */,
+				318EE54D18FFE708007F24D7 /* Supporting Files */,
 			);
 			path = DynamicProperties;
 			sourceTree = "<group>";

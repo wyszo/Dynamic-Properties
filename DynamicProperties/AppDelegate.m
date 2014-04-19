@@ -6,7 +6,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // See DynamicPropertiesTestsSpec file for more usage examples!
+    /** 
+     * See DynamicPropertiesTestsSpec file for more usage examples!
+     */
     SampleClass *sample = [SampleClass new];
     [sample printAllFooProperties];
     
